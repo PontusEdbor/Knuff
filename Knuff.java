@@ -1,5 +1,6 @@
 public class Knuff{
     public static void main(String[] args){
-	System.out.println("Hej");
+        Map m = new Map();
+	m.render();
     }
 }
