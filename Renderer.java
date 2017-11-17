@@ -4,6 +4,7 @@ public class Renderer{
 	this.tiles = new char[9][16]; //Starting out small with hardcoded values [y][x]
     }
     public void print(){
+	System.out.print("\033[2J\033[;H"); //Magic screen clearing line
 	for(char[] row : this.tiles){
 	    for(char tile : row){
 		System.out.print(tile);
