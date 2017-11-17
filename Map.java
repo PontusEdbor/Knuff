@@ -22,6 +22,9 @@ public class Map{
 	    y++;
 	}
     }
+    public char getTile(int x, int y){
+	return this.tiles[y][x];
+    }
     public void render(){
 	for(char[] row : this.tiles){
 	    for(char tile : row){
