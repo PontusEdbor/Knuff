@@ -10,7 +10,13 @@ public class Knuff{
 	    r.render(m); //add the map to the renderer
 	    r.render(h); //add hero to the renderer
 	    r.print();
-	    char choice = s.nextLine().charAt(0);
+	    char choice;
+	    try {
+		choice = s.nextLine().charAt(0);
+	    }
+	    catch (IndexOutOfBoundsException e){
+		choice = ' ';
+	    }
 	    System.out.println(choice);
 	    switch (choice){
 	    case 'w':
