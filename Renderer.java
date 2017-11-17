@@ -17,7 +17,7 @@ public class Renderer{
 	for(char[] row : this.tiles){
 	    int x = 0;
 	    for(char tile : row){
-		this.tiles[y][x] = m.getTile(x,y);
+		this.tiles[y][x] = m.getTileRender(x,y);
 		x++;
 	    }
 	    y++;
