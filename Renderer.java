@@ -22,4 +22,7 @@ public class Renderer{
 	    y++;
 	}
     }
+    public void render(Hero h){
+	this.tiles[h.getY()][h.getX()] = 'H';
+    }
 }
